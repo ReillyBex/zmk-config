@@ -12,6 +12,8 @@
         keymap {
                 compatible = "zmk,keymap";
 
+                sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -24,7 +26,6 @@
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &kp LGUI &mo 1 &kp RET     &kp SPACE &mo 2 &kp RALT
                         >;
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
