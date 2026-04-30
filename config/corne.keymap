@@ -45,8 +45,8 @@
                         >;
                 };
 
-                raise_layer {
-                    display-name = "Punc";
+                raise_layer {s
+                    display-name = "Punct";
                     sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
