@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>jkkjkj
 
+&left_encoder { resolution = <1>; };
+
 / {
         keymap {
                 compatible = "zmk,keymap";
