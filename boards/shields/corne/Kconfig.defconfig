@@ -40,7 +40,4 @@ endchoice
 
 endif # LVGL
 
-config EC11_TRIGGER_GLOBAL_THREAD
-    default y
-
 endif
