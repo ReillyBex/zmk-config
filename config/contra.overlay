@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+#include <contra_LED.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <layouts/common/ortho_4x12/1x2u.dtsi>
 
