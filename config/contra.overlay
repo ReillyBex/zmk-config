@@ -55,6 +55,13 @@
             , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
+    control_leds {
+        compatible = "zmk,control-gpio";
+        underglow_led: led_0 {
+            gpios = <&gpio1 15 GPIO_ACTIVE_HIGH>;
+        };
+    };
 };
 
 &layout_ortho_4x12_1x2u {
