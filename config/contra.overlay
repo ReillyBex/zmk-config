@@ -63,7 +63,14 @@
         };
     };
 
-    &pinctrl {
+    
+};
+
+&layout_ortho_4x12_1x2u {
+    transform = <&matrix_transform_40_1x2u>;
+};
+
+&pinctrl {
         pwm0_default: pwm0_default {
             group1 {
                 psels = <NRF_PSEL(PWM_OUT0, 1, 15)>;
@@ -83,8 +90,3 @@
         pinctrl-1 = <&pwm0_sleep>;
         pinctrl-names = "default", "sleep";
     };
-};
-
-&layout_ortho_4x12_1x2u {
-    transform = <&matrix_transform_40_1x2u>;
-};
