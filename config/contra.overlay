@@ -60,14 +60,14 @@
 
     backlight: gpioleds {
         compatible = "gpio-leds";
-        gpio_led_0 {
+        backlight_led {
             gpios = <&gpio1 15 GPIO_ACTIVE_HIGH>;
         };
     };
 
     gpios {
         compatible = "gpio-leds";
-        NumLayer: NumLayer {
+        num_led: num_led {
             gpios = <&gpio1 13 GPIO_ACTIVE_HIGH>;
         };
     };
@@ -75,12 +75,12 @@
     layer_callbacks {
         compatible = "elpekenin,layer-callback";
         layer_on {
-            layer = <1>;
+            layer = <0>;
             event = "on-activation";
             bindings = <&gpio 0 GPIO_ON>;
         };
         layer_off {
-            layer = <1>;
+            layer = <0>;
             event = "on-deactivation";
             bindings = <&gpio 0 GPIO_OFF>;
         };
