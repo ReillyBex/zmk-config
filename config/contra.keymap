@@ -14,6 +14,20 @@
     #define NUM_MODS 1
     #define BT_CTRL  2
 
+    layer_callbacks {
+        compatible = "elpekenin,layer-callback";
+        layer_on {
+            layer = <1>;
+            event = "on-activation";
+            bindings = <&gpio 0 GPIO_ON>;
+        };
+        layer_off {
+            layer = <1>;
+            event = "on-deactivation";
+            bindings = <&gpio 0 GPIO_OFF>;
+        };
+    };
+
     / {
         keymap {
             compatible = "zmk,keymap";
