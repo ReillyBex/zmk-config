@@ -26,7 +26,7 @@
         &kp LCTRL  &studio_unlock   &kp LALT  &kp LGUI    &mo BT_CTRL &kp SPACE   &trans        &mo NUM_MODS &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT
                 >;
             };
-LSHFT
+
             num_mods {
                 display-name = "Num Mods";
                 bindings = <
